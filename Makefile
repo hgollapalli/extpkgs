@@ -10,11 +10,12 @@ COMPS=cmdln-2.0.0\
 	jsonschema-2.5.1\
 	requests-2.11.1\
 	urllib3-1.16\
+	setuptools-28.2.0
 
 	
 
 all: install
-
+exe:
 clean:
 	$(RMDIRFORCE) $(DESTDIR)/cmdln-2.0.0
 	$(RMDIRFORCE) $(DESTDIR)/functools32-3.2.3-2
@@ -22,6 +23,7 @@ clean:
 	$(RMDIRFORCE) $(DESTDIR)/jsonschema-2.5.1
 	$(RMDIRFORCE) $(DESTDIR)/requests-2.11.1
 	$(RMDIRFORCE) $(DESTDIR)/urllib3-1.16
+	$(RMDIRFORCE) $(DESTDIR)/setuptools-28.2.0
 
 install: $(COMPS)
 	$(RSYNC) cmdln-2.0.0 $(DESTDIR) 
@@ -30,4 +32,5 @@ install: $(COMPS)
 	$(RSYNC) jsonschema-2.5.1 $(DESTDIR) 
 	$(RSYNC) requests-2.11.1 $(DESTDIR) 
 	$(RSYNC) urllib3-1.16 $(DESTDIR) 
+	$(RSYNC) setuptools-28.2.0 $(DESTDIR)
 
