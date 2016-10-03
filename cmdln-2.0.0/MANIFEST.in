@@ -1,5 +1,0 @@
-include *.py *.in *.txt
-exclude *~
-recursive-include test *.txt *.py
-recursive-include examples *.py
-recursive-include docs *.py *.txt *.markdown *.rst
