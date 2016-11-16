@@ -10,6 +10,7 @@ COMPS=cmdln-2.0.0\
 	jsonschema-2.5.1\
 	requests-2.11.1\
 	urllib3-1.16\
+	vcversioner-2.16.0.0\
 	setuptools-28.2.0
 
 	
